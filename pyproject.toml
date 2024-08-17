@@ -1,0 +1,27 @@
+[project]
+name = "save-slack-msg-to-notion"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "johnta0", email = "22534726+johnta0@users.noreply.github.com" }
+]
+dependencies = [
+    "notion-client>=2.2.1",
+    "python-dotenv>=1.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+save_msg_to_notion = 'save_slack_msg_to_notion:main'
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
