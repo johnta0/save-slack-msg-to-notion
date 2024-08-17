@@ -39,3 +39,7 @@ rye sync
 rye run save_msg_to_notion
 ```
 
+## 最後に
+
+このコードはほとんど Claude が書いてくれました。便利だね
+
