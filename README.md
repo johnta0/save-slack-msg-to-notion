@@ -39,6 +39,15 @@ rye sync
 rye run save_msg_to_notion
 ```
 
+### CSV を作成してそれを Notion に Import する方法
+
+量が多いならこちらの方がだいぶ速く済む。以下のコマンドを実行し CSV を作成し、それを Import する方法だ。
+しかし、既に存在する DB に追加はできず、全く新しい DB を作成することになるので注意。
+
+```
+rye run gen_import_csv
+```
+
 ## 最後に
 
 このコードはほとんど Claude が書いてくれました。便利だね
